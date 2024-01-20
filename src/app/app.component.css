@@ -14,6 +14,12 @@
     clear: both;
 }
 
+.row {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    background-color: #116466;
+}
+
 .sticky-column {
     position: -webkit-sticky; /* Safari */
     position: sticky;
