@@ -74,7 +74,7 @@ p {
 }
 
 ul.socmed-ul {
-    margin-bottom: 5rem;
+    margin-bottom: 0;
 }
 
 .footer {
@@ -85,4 +85,22 @@ ul.socmed-ul {
 
 i {
     padding-right: 0.5rem;
+}
+
+.copyright-footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    background-color: #116466;
+    justify-content: center;
+    font-size: 0.7rem;
+    padding-top: 3rem;
+}
+
+.copyright-footer-content {
+    color: #1E2D40;
+}
+
+.copyright-icon {
+    height: 0.5rem;
+    width: 0.5rem;
 }
