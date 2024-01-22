@@ -6,15 +6,35 @@
     border-top-right-radius: 3rem !important;
 }
 
-li {
+li.nav-link {
     list-style-type: none;
+    max-width: fit-content;
     margin-bottom: 10px;
     color: #1E2D40;
     font-weight: bold;
 }
 
-li:last-child {
-    padding-bottom: 10rem;
+li.nav-link:hover {
+    color:#D1E8E2;
+    font-size: 1.5rem;
+    display: block;
+    transition: color .2s ease-in-out;
+    text-decoration: none;
+}
+
+li.socmed-li:hover {
+    color:#D1E8E2;
+    font-size: 1.5rem;
+    display: block;
+    transition: color .2s ease-in-out;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
+    color: #1E2D40;
+    font-weight: bold;
 }
 
 a {
@@ -51,6 +71,10 @@ p {
 .socmed-div {
     position: fixed;
     bottom: 0;
+}
+
+ul.socmed-ul {
+    margin-bottom: 5rem;
 }
 
 .footer {

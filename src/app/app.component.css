@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .column {
@@ -15,8 +16,8 @@
 }
 
 .row {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 23rem;
+    padding-right: 23rem;
     background-color: #116466;
 }
 
@@ -28,4 +29,11 @@
 
 body {
     background-color: #116466;
+}
+
+@media only screen and (max-width: 1024px) {
+    .row {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 }
