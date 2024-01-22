@@ -36,6 +36,11 @@
     max-height: fit-content;
 }
 
+.content-card:hover {
+    background-color: #1a9c9e;
+    transition: all 0.4s ease-in-out;
+}
+
 .content-card:not(:first-child) {
     margin-top: 2rem;
 }
@@ -109,4 +114,8 @@
     font-size: 1rem;
     text-decoration-line: underline;
     color: #FFBA7A; 
+}
+
+a {
+    text-decoration: none;
 }
