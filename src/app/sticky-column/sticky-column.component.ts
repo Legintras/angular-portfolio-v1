@@ -14,9 +14,5 @@ export class StickyColumnComponent {
     document.documentElement.style.setProperty(
       "scroll-behavior", "smooth"
     );
-    // document.documentElement.style.setProperty(
-    //   "--scroll-padding",
-    //   navigationHeight + "px"
-    // );
   }
 }

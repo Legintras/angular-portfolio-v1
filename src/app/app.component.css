@@ -31,6 +31,21 @@ body {
     background-color: #116466;
 }
 
+.copyright-footer {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    background-color: #116466;
+    justify-content: center;
+    color: #1E2D40;
+    font-size: 0.7rem;
+    padding-top: 3rem;
+}
+
+.copyright-icon {
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
 @media only screen and (max-width: 1024px) {
     .row {
         padding-left: 5rem;
