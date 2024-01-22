@@ -1,3 +1,11 @@
+.profile-picture {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 3rem;
+    border-top-left-radius: 3rem !important;
+    border-top-right-radius: 3rem !important;
+}
+
 li {
     list-style-type: none;
     margin-bottom: 10px;
@@ -16,12 +24,13 @@ a {
 
 h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #FFCB9A;
+    color: #ffae62;
 }
 
 h2 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #FFBA7A;
+    padding-bottom: 0.5rem;
 }
 
 p {
@@ -32,6 +41,7 @@ p {
 
 .sticky-container {
     padding-top: 5rem;
+    background-color: #116466;
 }
 
 .p-content-sticky {
@@ -40,7 +50,7 @@ p {
 
 .socmed-div {
     position: fixed;
-    bottom: 1;
+    bottom: 0;
 }
 
 .footer {

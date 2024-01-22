@@ -1,0 +1,112 @@
+.content-column-container {
+    background-color: #116466;
+    margin-top: 6rem;
+}
+
+.introduction-body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #D1E8E2;
+    font-size: 1rem;
+    line-height: 1.2;
+    max-width: 36rem;
+}
+
+.introduction-body:last-child {
+    margin-bottom: 3rem;
+}
+
+.content-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    max-width: 36rem;
+    font-weight: bold;
+    color: #1E2D40;
+    margin-bottom: 1rem;
+}
+
+.contact-body {
+    color: #1E2D40;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.content-card {
+    background-color: #116466;
+    max-width: 40rem;
+    max-height: fit-content;
+}
+
+.content-card:not(:first-child) {
+    margin-top: 2rem;
+}
+
+.content-card:last-child {
+    margin-bottom: 4rem;
+}
+
+.bullet-content {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #D1E8E2;
+    font-size: 0.8rem;
+    padding-bottom: 0.5rem;
+}
+
+.bullet-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card-title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #FFBA7A;
+    font-size: 1.5rem;
+}
+
+.card-subtitle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffba7aab;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+.card-date {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 0.3rem;
+}
+
+.tech-stack-container {
+    display: flex;
+    align-items:flex-start;
+    max-width: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.tech-stack {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #1E2D40;
+    font-size: 0.8rem;
+    list-style-type: none;
+    padding: 0.3rem;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-radius: 0.5rem;
+}
+
+.tech-stack:not(:last-child) {
+    margin-right: 0.3rem;
+}
+
+.resume-container {
+    margin-top: 2rem;
+}
+
+.resume-body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    text-decoration-line: underline;
+    color: #FFBA7A; 
+}
