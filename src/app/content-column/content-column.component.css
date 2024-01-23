@@ -180,7 +180,7 @@ a {
     text-decoration: none;
 }
 
-/* @media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
     .tech-stack-container {
         display: flex;
         flex-direction: row;
@@ -224,4 +224,9 @@ a {
     .content-card:not(:first-child) {
         margin-top: 1rem;
     }
-} */
+}
+
+/* start of mobile view */
+@media only screen and (max-width: 693px) {
+
+}

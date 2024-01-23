@@ -109,3 +109,10 @@ i {
     height: 0.5rem;
     width: 0.5rem;
 }
+
+/* start of mobile view */
+@media only screen and (max-width: 693px) {
+    .socmed-div {
+        position: static;
+    }
+}
