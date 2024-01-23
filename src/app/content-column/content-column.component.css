@@ -1,3 +1,30 @@
+a {
+    color: inherit;
+}
+
+button {
+    color: #1E2D40;
+    background-color: #FFBA7A;
+    border-radius: 1rem;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.7rem;
+    width: fit-content;
+    height: fit-content;
+    font-weight: bold;
+    cursor: pointer;
+    transition: font-size 0.4s;
+    padding: 0.4rem;
+    position: initial;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+button:hover {
+    font-size: 0.9rem;
+    transition: font-size 0.4s;
+}
+
 .content-about {
     margin-bottom: 2rem;
 }
@@ -8,12 +35,28 @@
     scroll-behavior: smooth;
 }
 
+.content-column-container.ng-tns-c44-0 {
+    font-size: 0 !important;
+}
+
 .introduction-body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #D1E8E2;
     font-size: 1rem;
     line-height: 1.2;
     max-width: 100%;
+}
+
+.content-card-title-link {
+    transition: font-size 0.4s;
+}
+
+.content-card-title-link:hover {
+    color:#D1E8E2;
+    font-size: 2rem;
+    display: block;
+    transition: font-size 0.4s, color 0.4s ease-in-out;
+    text-decoration: none;
 }
 
 .introduction-body:last-child {
@@ -42,7 +85,7 @@
 }
 
 .content-card:hover {
-    background-color: #1a9c9e;
+    background-color: #339999;
     transition: all 0.4s ease-in-out;
 }
 
@@ -54,6 +97,14 @@
     margin-bottom: 4rem;
 }
 
+.card-content-summary {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+    color: #D1E8E2;
+}
+
 .bullet-content {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #D1E8E2;
@@ -62,8 +113,8 @@
 }
 
 .bullet-container {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
 }
 
 .card-title {

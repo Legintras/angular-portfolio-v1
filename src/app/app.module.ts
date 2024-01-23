@@ -10,6 +10,8 @@ import { MatDividerModule } from '@angular/material/divider'
 import { StickyColumnComponent } from './sticky-column/sticky-column.component';
 import { ContentColumnComponent } from './content-column/content-column.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +24,8 @@ import { ContentColumnComponent } from './content-column/content-column.componen
     BrowserAnimationsModule,
     MatTabsModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

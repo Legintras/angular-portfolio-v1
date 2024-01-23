@@ -1,0 +1,121 @@
+{
+    "experiences": [
+        {
+            "company": "Comcast",
+            "url": "https://corporate.comcast.com/",
+            "position": "Offshore Software Engineer",
+            "date": "March 2023 - Present",
+            "summary": "Full-stack developer skilled in creating responsive user interfaces, dynamic maps, implementing dynamic components, writing server-side code using Node.js and Angular.",
+            "details": [
+                "Responsible for developing both frontend and backend components through implementing the required features and functionality to meet a specific user story acceptance criteria.",
+                "Involved in creating responsive user interfaces, implementing dynamic and interactive components, handling form submissions, and managing states using the RxJS library.",
+                "Implemented modern and responsive user interfaces efficiently using Tailwind CSS, ensuring a streamlined and visually appealing design for web applications.",
+                "Utilized Leaflet.js to develop interactive and dynamic maps, enhancing user experience through seamless integration of geospatial features.",
+                "Involved in writing server-side code to handle HTTP requests, build APIs, interact with databases, and implement business logic using express.js framework.",
+                "Handling database interaction using MongoDB, writing queries, managing data models, and ensuring proper data storage and retrieval.",
+                "Writing unit tests, conducting integration tests, and debugging issues that arise during the development process.",
+                "Collaborating with designers, other developers, and stakeholders and also utilizing version control systems like Git to manage code repositories, facilitate collaboration, and ensure smooth code integration.",
+                "Learning new frameworks, libraries, and best practices to continuously improve as a developer and deliver high-quality solutions."
+            ],
+            "techstacks": [
+                "Angular",
+                "Tailwind",
+                "Leaflet.js",
+                "Node.js",
+                "RxJS",
+                "Express.js",
+                "MongoDB"
+            ]
+        },
+        {
+            "company": "Vituity",
+            "url": "https://www.vituity.com/",
+            "position": "Umbraco Developer",
+            "date": "May 2022 - September 2022",
+            "summary": "Full-stack developer skilled in creating responsive user interfaces, dynamic maps, implementing dynamic components, writing server-side code using Node.js and Angular.",
+            "details": [
+                "Developed and maintained websites using the Umbraco content management system (CMS) for Vituity.",
+                "Created templates, defined content structures, and implemented the desired functionalities using a combination of HTML, CSS, JavaScript, and .NET technologies.",
+                "Configured the CMS according to specific project requirements. It involved creating custom data types, document types, and macros, as well as extending the functionality of the CMS through custom code.",
+                "Ensured that the website is optimized for different devices and browsers, and enhanced user experience through animations, dynamic content loading, and other interactive features.",
+                "Maintained and updated the Vituity website through bug fixing, performance optimization, and ensuring that the website remains secure and up to date with the latest Umbraco patches and upgrades.",
+                "Collaborated with designers, project managers, and other developers through participation in meetings, communicating project progress, and providing technical guidance to ensure the successful delivery of the requirements."
+            ],
+            "techstacks": [
+                "Umbraco",
+                "Bootstrap",
+                ".NET",
+                "ASP.NET",
+                "HTML5"
+            ]
+        },
+        {
+            "company": "Excellis Interactive",
+            "url": "https://excelliscorp.com/",
+            "position": "Offshore Software Engineer and Knowledge Sharing Lecturer/Facilitator",
+            "date": "February 2022 - Present",
+            "summary": "Full-stack developer skilled in creating responsive user interfaces, dynamic maps, implementing dynamic components, writing server-side code using Node.js and Angular.",
+            "details": [
+                "Demonstrated how Umbraco works for the developers who were new to Vituity.",
+                "Presented a beginner course on Ionic through the demonstration of how the latest Ionic 6 components and features work.",
+                "Served as a guide or coordinator, helping to facilitate the learning and development process of the new developers to be ready for Excellis’ Node.js related projects.",
+                "Assisted the new developers in understanding and learning Node.js concepts, tools, and techniques through group discussions and training sessions to foster a collaborative learning environment.",
+                "Helped the new developers access relevant learning resources such as documentation, tutorials, and online courses related to Node.js. Also responsible for curating a collection of useful materials for self-study or reference.",
+                "Supported the new developers by addressing their queries, clarifying doubts, and providing guidance on Node.js-related challenges. May also encourage them to engage in problem-solving activities to further establish a collaborative group for knowledge sharing.",
+                "Designed and organized practical exercises or projects to reinforce learning and also provide guidance and feedback to the new developers as they work on real-world scenarios or build Node.js applications.",
+                "Review the new developers' code, provide constructive feedback, and suggest improvements in coding style, best practices, performance optimization, and security considerations specific to Node.js development.",
+                "Kept up with the latest trends, updates, and advancements in the Node.js ecosystem. As a facilitator, it is important to be consistently informed about new frameworks, tools, libraries, and best practices, ensuring that up-to-date and relevant information is provided to the new developers.",
+                "Continually evaluated and improved teaching methods, content delivery, and engagement strategies based on the new developers’ feedback and evolving needs. And most importantly, to create an effective learning experience."
+            ],
+            "techstacks": [
+                "Typescript",
+                "Node.js",
+                "Ionic",
+                "Umbraco"
+            ]
+        },
+        {
+            "company": "Cipla",
+            "url": "https://www.cipla.com/",
+            "position": "Offshore Software Engineer",
+            "date": "February 2022 - May 2022",
+            "summary": "Full-stack developer skilled in creating responsive user interfaces, dynamic maps, implementing dynamic components, writing server-side code using Node.js and Angular.",
+            "details": [
+                "Created RESTful APIs or serverless APIs using Azure Functions to handle specific functionalities.",
+                "Implemented server-side logic and business logic using Node.js for building scalable and high-performance backend services.",
+                "Built user interfaces and interactive web applications using Angular.",
+                "Ensured that the application is responsive and works well on different devices and screen sizes.",
+                "Wrote unit tests, integration tests, and end-to-end tests to ensure the reliability of the application.",
+                "Identified and resolved issues, bugs, and performance bottlenecks in both the frontend and backend components.",
+                "Worked closely with cross-functional teams, including product managers, designers, and other developers, to deliver high-quality software."
+            ],
+            "techstacks": [
+                "Node.js",
+                "Express.js",
+                "Azure",
+                "Angular"
+            ]
+        },
+        {
+            "company": "Pointwest Innovations Corporation",
+            "url": "https://pointwest.com.ph/",
+            "position": "Software Engineer",
+            "date": "November 2021 - Present",
+            "summary": "Full-stack developer skilled in creating responsive user interfaces, dynamic maps, implementing dynamic components, writing server-side code using Node.js and Angular.",
+            "details": [
+                "Attended a full-stack software engineer bootcamp, focusing on .NET, React, and Angular.",
+                "Attended a full-stack software engineer bootcamp, focusing on Node.js, AWS, and React Native.",
+                "Attended DevOps Training."
+            ],
+            "techstacks": [
+                ".NET",
+                "React",
+                "Angular",
+                "Node.js",
+                "AWS"
+            ]
+
+        }
+    ]
+    
+}

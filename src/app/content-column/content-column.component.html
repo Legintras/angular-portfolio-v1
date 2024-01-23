@@ -17,67 +17,28 @@
         <div class="content-experience">
             <p class="content-title">Experience</p>
         </div>
-        <mat-card class="content-card mat-elevation-z0">
-            <a href="https://corporate.comcast.com/" target="_blank">
-            <mat-card-header>
-            <mat-card-title class="card-title">Comcast <i class="lni lni-arrow-top-right"></i></mat-card-title>
-            <mat-card-subtitle class="card-subtitle">Offshore Software Engineer</mat-card-subtitle>
-            <mat-card-subtitle class="card-date">March 2023 - Present</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-            <ul class="bullet-container">
-                <li class="bullet-content">Responsible for developing both frontend and backend components through implementing the required features and functionality to meet a specific user story acceptance criteria.</li>
-                <li class="bullet-content">Involved in creating responsive user interfaces, implementing dynamic and interactive components, handling form submissions, and managing states using the RxJS library.</li>
-                <li class="bullet-content">Involved in writing server-side code to handle HTTP requests, build APIs, interact with databases, and implement business logic using express.js framework.</li>
-                <li class="bullet-content">Handling database interaction using MongoDB, writing queries, managing data models, and ensuring proper data storage and retrieval.</li>
-                <li class="bullet-content">Writing unit tests, conducting integration tests, and debugging issues that arise during the development process.</li>
-                <li class="bullet-content">Collaborating with designers, other developers, and stakeholders and also utilizing version control systems like Git to manage code repositories, facilitate collaboration, and ensure smooth code integration.</li>
-                <li class="bullet-content">Learning new frameworks, libraries, and best practices to continuously improve as a developer and deliver high-quality solutions.</li>
-            </ul>
-            <mat-divider></mat-divider>
-            </mat-card-content>
-            <mat-card-footer class="card-footer-container">
-            <ul class="tech-stack-container">
-                <li class="tech-stack">Angular</li>
-                <li class="tech-stack">Tailwind</li>
-                <li class="tech-stack">Leaflet.js</li>
-                <li class="tech-stack">Node.js</li>
-                <li class="tech-stack">RxJS</li>
-                <li class="tech-stack">Express.js</li>
-                <li class="tech-stack">MongoDB</li>
-            </ul>
-            </mat-card-footer>
-            </a>
-        </mat-card>
-        <mat-card class="content-card mat-elevation-z0">
-            <a href="https://www.vituity.com/" target="_blank">
-            <mat-card-header>
-            <mat-card-title class="card-title">Vituity <i class="lni lni-arrow-top-right"></i></mat-card-title>
-            <mat-card-subtitle class="card-subtitle">Umbraco Developer</mat-card-subtitle>
-            <mat-card-subtitle class="card-date">May 2022 - September 2022</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-            <ul class="bullet-container">
-                <li class="bullet-content">Developed and maintained websites using the Umbraco content management system (CMS) for Vituity.</li>
-                <li class="bullet-content">Created templates, defined content structures, and implemented the desired functionalities using a combination of HTML, CSS, JavaScript, and .NET technologies.</li>
-                <li class="bullet-content">Configured the CMS according to specific project requirements. It involved creating custom data types, document types, and macros, as well as extending the functionality of the CMS through custom code.</li>
-                <li class="bullet-content">Ensured that the website is optimized for different devices and browsers, and enhanced user experience through animations, dynamic content loading, and other interactive features.</li>
-                <li class="bullet-content">Maintained and updated the Vituity website through bug fixing, performance optimization, and ensuring that the website remains secure and up to date with the latest Umbraco patches and upgrades.</li>
-                <li class="bullet-content">Collaborated with designers, project managers, and other developers through participation in meetings, communicating project progress, and providing technical guidance to ensure the successful delivery of the requirements.</li>
-            </ul>
-            <mat-divider></mat-divider>
-            </mat-card-content>
-            <mat-card-footer class="card-footer-container">
-            <ul class="tech-stack-container">
-                <li class="tech-stack">Umbraco</li>
-                <li class="tech-stack">Bootstrap</li>
-                <li class="tech-stack">.NET</li>
-                <li class="tech-stack">ASP.NET</li>
-                <li class="tech-stack">HTML5</li>
-            </ul>
-            </mat-card-footer>
-            </a>
-        </mat-card>
+        <div *ngFor="let experience of experiences">
+            <mat-card class="content-card mat-elevation-z0">
+                <mat-card-header>
+                    <mat-card-title class="card-title content-card-title-link"><a href="https://corporate.comcast.com/" target="_blank">{{ experience.company }} <i class="lni lni-arrow-top-right"></i></a></mat-card-title>
+                    <mat-card-subtitle class="card-subtitle">{{ experience.position }}</mat-card-subtitle>
+                    <mat-card-subtitle class="card-date">{{ experience.date }}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p class="card-content-summary">Full-stack developer skilled in creating responsive user interfaces, dynamic maps, implementing dynamic components, writing server-side code using Node.js and Angular.</p>
+                    <button (click)="toggleList()">{{ showList ? 'Less Details' : 'More Details' }}</button>
+                    <ul class="bullet-container" [@listAnimation]="listState">
+                        <li class="bullet-content" *ngFor="let details of experience.details">{{ details }}</li>
+                    </ul>
+                    <mat-divider></mat-divider>
+                </mat-card-content>
+                <mat-card-footer class="card-footer-container">
+                    <ul class="tech-stack-container">
+                        <li class="tech-stack" *ngFor="let techstack of experience.techstacks">{{ techstack }}</li>
+                    </ul>
+                </mat-card-footer>
+            </mat-card>
+        </div>
         <mat-card class="content-card mat-elevation-z0">
             <a href="https://excelliscorp.com/" target="_blank">
             <mat-card-header>
