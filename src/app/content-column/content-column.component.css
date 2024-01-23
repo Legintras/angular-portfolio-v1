@@ -79,12 +79,12 @@ button:hover {
 }
 
 .content-card {
-    background: linear-gradient(to bottom right, #116466, #1d7a7c);
+    background: linear-gradient(to top left, #116466, #1d7a7c);
     max-width: 100%;
     max-height: fit-content;
     background-size: 100% 400%;
     background-position: 100% 0%;
-    transition: .4s;
+    transition: 1s;
 }
 
 .content-card:hover {
