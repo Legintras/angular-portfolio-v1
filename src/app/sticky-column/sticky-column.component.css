@@ -66,7 +66,7 @@ p {
 
 .sticky-container {
     padding-top: 5rem;
-    background-color: #116466;
+    /* background-color: #116466; */
 }
 
 .p-content-sticky {
@@ -95,7 +95,7 @@ i {
 .copyright-footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
-    background-color: #116466;
+    /* background-color: #116466; */
     justify-content: center;
     font-size: 0.7rem;
     padding-top: 3rem;

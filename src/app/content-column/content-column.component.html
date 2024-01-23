@@ -19,113 +19,30 @@
         </div>
         <div *ngFor="let experience of experiences">
             <mat-card class="content-card mat-elevation-z0">
-                <mat-card-header>
-                    <mat-card-title class="card-title content-card-title-link"><a href="https://corporate.comcast.com/" target="_blank">{{ experience.company }} <i class="lni lni-arrow-top-right"></i></a></mat-card-title>
-                    <mat-card-subtitle class="card-subtitle">{{ experience.position }}</mat-card-subtitle>
-                    <mat-card-subtitle class="card-date">{{ experience.date }}</mat-card-subtitle>
-                </mat-card-header>
-                <mat-card-content>
-                    <p class="card-content-summary">Full-stack developer skilled in creating responsive user interfaces, dynamic maps, implementing dynamic components, writing server-side code using Node.js and Angular.</p>
-                    <button (click)="toggleList()">{{ showList ? 'Less Details' : 'More Details' }}</button>
-                    <ul class="bullet-container" [@listAnimation]="listState">
-                        <li class="bullet-content" *ngFor="let details of experience.details">{{ details }}</li>
-                    </ul>
-                    <mat-divider></mat-divider>
-                </mat-card-content>
-                <mat-card-footer class="card-footer-container">
-                    <ul class="tech-stack-container">
-                        <li class="tech-stack" *ngFor="let techstack of experience.techstacks">{{ techstack }}</li>
-                    </ul>
-                </mat-card-footer>
+              <mat-card-header>
+                <mat-card-title class="card-title content-card-title-link">
+                  <a href="{{ experience.url }}" target="_blank">{{ experience.company }} <i class="lni lni-arrow-top-right"></i></a>
+                </mat-card-title>
+                <mat-card-subtitle class="card-subtitle">{{ experience.position }}</mat-card-subtitle>
+                <mat-card-subtitle class="card-date">{{ experience.date }}</mat-card-subtitle>
+              </mat-card-header>
+              <mat-card-content>
+                <p class="card-content-summary">{{ experience.summary }}</p>
+                <button (click)="toggleList(experience)">
+                  {{ cardStates[experience.id] ? 'Less Details' : 'More Details' }}
+                </button>
+                <ul class="bullet-container" [@listAnimation]="getListState(experience)">
+                  <li class="bullet-content" *ngFor="let details of experience.details">{{ details }}</li>
+                </ul>
+                <mat-divider></mat-divider>
+              </mat-card-content>
+              <mat-card-footer class="card-footer-container">
+                <ul class="tech-stack-container">
+                  <li class="tech-stack" *ngFor="let techstack of experience.techstacks">{{ techstack }}</li>
+                </ul>
+              </mat-card-footer>
             </mat-card>
-        </div>
-        <mat-card class="content-card mat-elevation-z0">
-            <a href="https://excelliscorp.com/" target="_blank">
-            <mat-card-header>
-            <mat-card-title class="card-title">Excellis Interactive <i class="lni lni-arrow-top-right"></i></mat-card-title>
-            <mat-card-subtitle class="card-subtitle">Offshore Software Engineer and Knowledge Sharing Lecturer/Facilitator</mat-card-subtitle>
-            <mat-card-subtitle class="card-date">February 2022 - Present</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-            <ul class="bullet-container">
-                <li class="bullet-content">Demonstrated how Umbraco works for the developers who were new to Vituity.</li>
-                <li class="bullet-content">Presented a beginner course on Ionic through the demonstration of how the latest Ionic 6 components and features work.</li>
-                <li class="bullet-content">Served as a guide or coordinator, helping to facilitate the learning and development process of the new developers to be ready for Excellis’ Node.js related projects.</li>
-                <li class="bullet-content">Assisted the new developers in understanding and learning Node.js concepts, tools, and techniques through group discussions and training sessions to foster a collaborative learning environment.</li>
-                <li class="bullet-content">Helped the new developers access relevant learning resources such as documentation, tutorials, and online courses related to Node.js. Also responsible for curating a collection of useful materials for self-study or reference.</li>
-                <li class="bullet-content">Supported the new developers by addressing their queries, clarifying doubts, and providing guidance on Node.js-related challenges. May also encourage them to engage in problem-solving activities to further establish a collaborative group for knowledge sharing.</li>
-                <li class="bullet-content">Designed and organized practical exercises or projects to reinforce learning and also provide guidance and feedback to the new developers as they work on real-world scenarios or build Node.js applications.</li>
-                <li class="bullet-content">Review the new developers' code, provide constructive feedback, and suggest improvements in coding style, best practices, performance optimization, and security considerations specific to Node.js development.</li>
-                <li class="bullet-content">Kept up with the latest trends, updates, and advancements in the Node.js ecosystem. As a facilitator, it is important to be consistently informed about new frameworks, tools, libraries, and best practices, ensuring that up-to-date and relevant information is provided to the new developers.</li>
-                <li class="bullet-content">Continually evaluated and improved teaching methods, content delivery, and engagement strategies based on the new developers’ feedback and evolving needs. And most importantly, to create an effective learning experience.</li>
-            </ul>
-            <mat-divider></mat-divider>
-            </mat-card-content>
-            <mat-card-footer class="card-footer-container">
-            <ul class="tech-stack-container">
-                <li class="tech-stack">TypeScript</li>
-                <li class="tech-stack">Node.js</li>
-                <li class="tech-stack">Ionic</li>
-                <li class="tech-stack">Umbraco</li>
-            </ul>
-            </mat-card-footer>
-            </a>
-        </mat-card>
-        <mat-card class="content-card mat-elevation-z0">
-            <a href="https://www.cipla.com/" target="_blank">
-            <mat-card-header>
-            <mat-card-title class="card-title">Cipla <i class="lni lni-arrow-top-right"></i></mat-card-title>
-            <mat-card-subtitle class="card-subtitle">Offshore Software Engineer</mat-card-subtitle>
-            <mat-card-subtitle class="card-date">February 2022 - May 2022</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-            <ul class="bullet-container">
-                <li class="bullet-content">Created RESTful APIs or serverless APIs using Azure Functions to handle specific functionalities.</li>
-                <li class="bullet-content">Implemented server-side logic and business logic using Node.js for building scalable and high-performance backend services.</li>
-                <li class="bullet-content">Built user interfaces and interactive web applications using Angular.</li>
-                <li class="bullet-content">Ensured that the application is responsive and works well on different devices and screen sizes.</li>
-                <li class="bullet-content">Wrote unit tests, integration tests, and end-to-end tests to ensure the reliability of the application.</li>
-                <li class="bullet-content">Identified and resolved issues, bugs, and performance bottlenecks in both the frontend and backend components.</li>
-                <li class="bullet-content">Worked closely with cross-functional teams, including product managers, designers, and other developers, to deliver high-quality software.</li>
-            </ul>
-            <mat-divider></mat-divider>
-            </mat-card-content>
-            <mat-card-footer class="card-footer-container">
-            <ul class="tech-stack-container">
-                <li class="tech-stack">Node.js</li>
-                <li class="tech-stack">Express.js</li>
-                <li class="tech-stack">Azure</li>
-                <li class="tech-stack">Angular</li>
-            </ul>
-            </mat-card-footer>
-            </a>
-        </mat-card>
-        <mat-card class="content-card mat-elevation-z0">
-            <a href="https://pointwest.com.ph/" target="_blank">
-            <mat-card-header>
-            <mat-card-title class="card-title">Pointwest Innovations Corporation <i class="lni lni-arrow-top-right"></i></mat-card-title>
-            <mat-card-subtitle class="card-subtitle">Software Engineer</mat-card-subtitle>
-            <mat-card-subtitle class="card-date">November 2021 - Present</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-            <ul class="bullet-container">
-                <li class="bullet-content">Attended a full-stack software engineer bootcamp, focusing on .NET, React, and Angular.</li>
-                <li class="bullet-content">Attended a full-stack software engineer bootcamp, focusing on Node.js, AWS, and React Native.</li>
-                <li class="bullet-content">Attended DevOps Training.</li>
-            </ul>
-            <mat-divider></mat-divider>
-            </mat-card-content>
-            <mat-card-footer class="card-footer-container">
-            <ul class="tech-stack-container">
-                <li class="tech-stack">.NET</li>
-                <li class="tech-stack">React</li>
-                <li class="tech-stack">Angular</li>
-                <li class="tech-stack">Node.js</li>
-                <li class="tech-stack">AWS</li>
-            </ul>
-            </mat-card-footer>
-            </a>
-        </mat-card>
+          </div>
         <div class="resume-container">
             <a href="../../assets/jncontrerasdev.pdf" target="_blank"><p class="resume-body">View my full résumé here <i class="lni lni-arrow-top-right"></i></p></a>
         </div>

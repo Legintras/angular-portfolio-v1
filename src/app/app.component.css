@@ -18,17 +18,13 @@
 .row {
     padding-left: 23rem;
     padding-right: 23rem;
-    background-color: #116466;
+    background: linear-gradient(to top left, #3e7c7d, #1d4d4f);
 }
 
 .sticky-column {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-}
-
-body {
-    background-color: #116466;
 }
 
 @media only screen and (max-width: 1024px) {

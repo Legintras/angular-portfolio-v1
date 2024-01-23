@@ -1,6 +1,7 @@
 {
     "experiences": [
         {
+            "id": 1,
             "company": "Comcast",
             "url": "https://corporate.comcast.com/",
             "position": "Offshore Software Engineer",
@@ -28,11 +29,12 @@
             ]
         },
         {
+            "id": 2,
             "company": "Vituity",
             "url": "https://www.vituity.com/",
             "position": "Umbraco Developer",
             "date": "May 2022 - September 2022",
-            "summary": "Full-stack developer skilled in creating responsive user interfaces, dynamic maps, implementing dynamic components, writing server-side code using Node.js and Angular.",
+            "summary": "Developed and maintained Vituity's website through Umbraco CMS, implementation of custom functionalities, performance optimization, and collaboration with cross-functional teams for successful project delivery.",
             "details": [
                 "Developed and maintained websites using the Umbraco content management system (CMS) for Vituity.",
                 "Created templates, defined content structures, and implemented the desired functionalities using a combination of HTML, CSS, JavaScript, and .NET technologies.",
@@ -50,6 +52,7 @@
             ]
         },
         {
+            "id": 3,
             "company": "Excellis Interactive",
             "url": "https://excelliscorp.com/",
             "position": "Offshore Software Engineer and Knowledge Sharing Lecturer/Facilitator",
@@ -75,6 +78,7 @@
             ]
         },
         {
+            "id": 4,
             "company": "Cipla",
             "url": "https://www.cipla.com/",
             "position": "Offshore Software Engineer",
@@ -97,6 +101,7 @@
             ]
         },
         {
+            "id": 5,
             "company": "Pointwest Innovations Corporation",
             "url": "https://pointwest.com.ph/",
             "position": "Software Engineer",
