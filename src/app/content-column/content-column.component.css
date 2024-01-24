@@ -1,3 +1,13 @@
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+li {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 a {
     color: inherit;
 }
@@ -23,10 +33,6 @@ button {
 button:hover {
     font-size: 0.9rem;
     transition: font-size 0.4s;
-}
-
-.content-about {
-    margin-bottom: 2rem;
 }
 
 .content-column-container {
@@ -79,7 +85,7 @@ button:hover {
 }
 
 .content-card {
-    background: linear-gradient(to top left, #116466, #1d7a7c);
+    background: linear-gradient(to top left, #218a8f, #2e9fa5);
     max-width: 100%;
     max-height: fit-content;
     background-size: 100% 400%;
@@ -88,7 +94,7 @@ button:hover {
 }
 
 .content-card:hover {
-    background: linear-gradient(to bottom right, #116466, #3a9ca0);
+    background: linear-gradient(to bottom right, #33a6ac, #5fd4db);
     background-position: 100% 100%;
 }
 
@@ -106,6 +112,7 @@ button:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 0.9rem;
     color: #D1E8E2;
+    padding-right: 0.5rem;
 }
 
 .bullet-content {
@@ -113,6 +120,7 @@ button:hover {
     color: #D1E8E2;
     font-size: 0.8rem;
     padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .bullet-container {
@@ -129,7 +137,7 @@ button:hover {
 
 .card-subtitle {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #ffba7aab;
+    color: #ffba7aCC;
     font-size: 1rem;
     margin-top: 0.3rem;
 }
@@ -173,7 +181,7 @@ button:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1rem;
     text-decoration-line: underline;
-    color: #FFBA7A; 
+    color: #FFBA7A;
 }
 
 a {
