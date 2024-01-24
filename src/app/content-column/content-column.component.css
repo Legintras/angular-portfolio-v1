@@ -117,6 +117,8 @@ button:hover {
     font-size: 0.9rem;
     color: #D1E8E2;
     padding-right: 0.5rem;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .bullet-content {
