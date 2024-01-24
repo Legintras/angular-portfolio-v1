@@ -41,21 +41,27 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .row {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
 /* start of mobile view */
-@media only screen and (max-width: 693px) {
+@media only screen and (max-width: 727px) {
     .row {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         clear: none;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .column {
+        width: 100%;
     }
 
     .sticky-column {

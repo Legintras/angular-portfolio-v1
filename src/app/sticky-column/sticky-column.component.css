@@ -111,8 +111,50 @@ i {
 }
 
 /* start of mobile view */
-@media only screen and (max-width: 693px) {
+@media only screen and (max-width: 727px) {
     .socmed-div {
         position: static;
+    }
+
+    .copyright-footer {
+        display: none;
+    }
+
+    .sticky-container {
+        display: flex;
+        padding-top: 1rem;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .primary-navigation {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 !important;
+        margin: 0 !important;
+        justify-content: center !important;
+    }
+
+    li {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    li:not(:last-child) {
+        margin-right: 3rem;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    li:not(:last-child) {
+        margin-right: 1rem;
     }
 }
