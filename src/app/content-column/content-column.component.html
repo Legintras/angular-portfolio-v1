@@ -28,11 +28,11 @@
             </mat-card-header>
             <mat-card-content>
               <div class="card-content-summary">
-                {{ experience.summary }}
+                {{ experience.summary }} <br>
+                <button (click)="toggleList(experience)">
+                  {{ cardStates[experience.id] ? 'Less Details' : 'More Details' }}
+                </button>
               </div>
-              <button (click)="toggleList(experience)">
-                {{ cardStates[experience.id] ? 'Less Details' : 'More Details' }}
-              </button>
               <ul class="bullet-container" [@listAnimation]="getListState(experience)">
                 <li class="bullet-content" *ngFor="let details of experience.details">{{ details }}</li>
               </ul>
