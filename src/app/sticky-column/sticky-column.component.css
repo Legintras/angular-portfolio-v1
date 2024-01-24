@@ -157,4 +157,8 @@ i {
     li:not(:last-child) {
         margin-right: 1rem;
     }
+
+    i {
+        padding-right: 0.1rem;
+    }
 }
