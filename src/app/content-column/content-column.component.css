@@ -279,4 +279,8 @@ a {
     mat-card.content-card {
         margin-bottom: 1rem !important;
     }
+
+    .content-experience {
+        padding-top: 1rem;
+    }
 }
