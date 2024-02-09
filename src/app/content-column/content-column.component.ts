@@ -46,8 +46,6 @@ export class ContentColumnComponent implements OnInit{
       this.experiences.forEach(experience => {
         this.cardStates[experience.id] = false;
       });
-
-      console.log(this.experiences);
     });
   }
 
